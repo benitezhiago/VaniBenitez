@@ -17,6 +17,8 @@
 
   /* HSL color mode */
   --title-font-size: 1.875rem;
+  --title-font-sizee: 1.5rem;
+
   --subtlite-font-size: 1rem;
 
   --title-font: 'Poppins', sans-serif;
@@ -35,9 +37,21 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
 }
+
+.logoimg {
+  width: 10.438rem;
+  height: 5.875rem;
+  margin-top: 1.5rem;
+  margin-left: -3rem;
+}
 .title {
   font: 700 var(--title-font-size) var(--title-font);
-  color: var(--title-color);
+  color: #00363e;
+  -webkit-font-smoothing: auto;
+}
+.title1 {
+  font: 700 var(--title-font-sizee) var(--title-font);
+  color: #00363e;
   -webkit-font-smoothing: auto;
 }
 a {
@@ -47,7 +61,7 @@ ul {
   list-style: none;
 }
 .button {
-  background-color: var(--base-color);
+  background-color: #00363e;
   color: var(--text-color-light);
   height: 3.5rem;
   display: inline-flex;
@@ -58,7 +72,7 @@ ul {
   transition: background 0.3s;
 }
 .button:hover {
-  background: var(--base-color-alt);
+  background: #128799;
 }
 .divider-1 {
   height: 1px;
@@ -100,7 +114,7 @@ nav {
 }
 nav ul li a:hover,
 nav ul li a.active {
-  color: var(--base-color);
+  color: #128799;
 }
 nav ul li a {
   transition: color 0.3s;
@@ -110,7 +124,7 @@ nav ul li a::after {
   content: '';
   height: 2px;
   width: 0%;
-  background: var(--base-color);
+  background: #128799;
   position: absolute;
   left: 0;
   bottom: -1.5rem;
@@ -200,7 +214,11 @@ nav.show div.icon-close {
   margin-bottom: 4rem;
 }
 .section header strong {
-  color: var(--base-color);
+  color: #128799;
+}
+.imgcard {
+  width: 5rem;
+  height: 5rem;
 }
 #home {
   overflow: hidden;
@@ -216,7 +234,7 @@ nav.show div.icon-close {
   height: 100%;
   width: 100%;
   border-radius: 0.25rem;
-  background: var(--base-color-second);
+  background: #00363e;
   position: absolute;
   top: -16.8%;
   left: 16.8%;
@@ -228,6 +246,7 @@ nav.show div.icon-close {
   right: 2.93rem;
 }
 #home .text {
+  margin-top: 1.5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
@@ -255,7 +274,7 @@ nav.show div.icon-close {
   height: 100%;
   width: 100%;
   border-radius: 0.25rem;
-  background: var(--base-color-second);
+  background: #00363e;
   position: absolute;
   top: -8.3%;
   left: -33%;
@@ -268,7 +287,7 @@ nav.show div.icon-close {
 #about .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  text-align: center;
+  text-align: justify;
 }
 
 /*=======================services================================*/
@@ -282,13 +301,11 @@ nav.show div.icon-close {
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
-.card i {
-  display: block;
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
-  color: var(--base-color);
+.card p {
+  margin-top: 0.5rem;
+  text-align: justify;
 }
-.card title {
+.card title1 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -298,6 +315,8 @@ nav.show div.icon-close {
   background: white;
 }
 #testmonials .container {
+  position: relative;
+  overflow: hidden;
   margin-left: 0;
   margin-right: 0;
 }
@@ -322,7 +341,11 @@ nav.show div.icon-close {
   position: absolute;
   top: -0.375rem;
   left: -1.875rem;
-  color: var(--base-color);
+  color: #128799;
+}
+.imgano {
+  width: 2rem;
+  height: 2rem;
 }
 #testmonials cite {
   display: flex;
@@ -358,7 +381,9 @@ nav.show div.icon-close {
 #contact .grid {
   gap: 4rem;
 }
-
+#contact header {
+  text-align: justify;
+}
 #contact .text p {
   margin-bottom: 2rem;
 }
@@ -379,11 +404,11 @@ nav.show div.icon-close {
 }
 
 #contact ul li i {
-  color: var(--base-color);
+  color: #128799;
 }
 /*=======================footer================================*/
 footer {
-  background: var(--base-color);
+  background: #00363e;
 }
 footer.section {
   padding: 4rem 0;
@@ -413,7 +438,7 @@ footer .social a:hover {
 }
 /*=======================back top================================*/
 .back-to-top {
-  background: var(--base-color);
+  background: #128799;
   color: var(--text-color-light);
   position: fixed;
   right: 1rem;
